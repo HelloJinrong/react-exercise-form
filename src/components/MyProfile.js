@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Button } from 'antd';
 import './myProfile.less';
 
 class MyProfile extends Component {
@@ -75,10 +76,8 @@ class MyProfile extends Component {
                  onChange={this.handeleCheck}/>
                  <p>I have read the terms of conduct</p>
         </div>
-        <button
-          type='submit'
-          disabled={!this.state.name||!this.state.desc || !this.state.read}>
-        </button>
+          <Button type="primary" disabled={!this.state.name||!this.state.desc || !this.state.read}>
+             Submit</Button>
       </form>
     );
   }

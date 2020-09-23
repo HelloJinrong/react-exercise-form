@@ -1,0 +1,64 @@
+
+@width: 500px;
+form {
+  color: dimgrey;
+  font-family: Arial, Helvetica, sans-serif;
+  h1 {
+    margin-bottom: 30px;
+  }
+  .name .label, .gender .label, .desc .label {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  input, .gender select,  .desc textarea{
+    box-sizing: border-box;
+    width: @width;
+    height: 50px;
+    border-color: transparent;
+    padding: 10px;
+    color: dimgrey;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .desc textarea{
+    height: 100px;
+  }
+  .check {
+    margin: 10px 0;
+    height: 40px;
+    position: relative;
+    input {
+      width: 30px;
+      height: 30px;
+      margin: 5px 10px 5px 0;
+    }
+    input[type=checkbox]::after{
+      box-sizing: border-box;
+      border: 2px solid darkgrey;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      text-align: center;
+      content: ' ';
+    }
+    p{
+      position: absolute;
+      top: 0;
+      line-height: 40px;
+      margin: 0 50px 0;
+    }
+
+  }
+  Button {
+    width: 300px;
+    height: 60px;
+    background-color: lightskyblue;
+    color: white;
+    font-size: large;
+    line-height: 60px;
+    border-color: transparent;
+    box-sizing: border-box;
+    margin: 10px 100px;
+  }
+
+
+}
